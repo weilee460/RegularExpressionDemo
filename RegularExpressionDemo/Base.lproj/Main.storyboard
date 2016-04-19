@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RegularExpressionDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oXi-QN-m2M">
+                                <rect key="frame" x="137" y="28" width="443" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNb-K5-WAP">
+                                <rect key="frame" x="20" y="66" width="560" height="30"/>
+                                <state key="normal" title="验证Email"/>
+                                <connections>
+                                    <action selector="verifyEmailAddress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dJj-X7-JcY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请输入Email：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ZW-aH-HTc">
+                                <rect key="frame" x="20" y="28" width="109" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oXi-QN-m2M" firstAttribute="leading" secondItem="6ZW-aH-HTc" secondAttribute="trailing" constant="8" symbolic="YES" id="0yk-HH-Fwx"/>
+                            <constraint firstItem="6ZW-aH-HTc" firstAttribute="baseline" secondItem="oXi-QN-m2M" secondAttribute="baseline" id="5mz-1G-hFD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yNb-K5-WAP" secondAttribute="trailing" id="9Bl-fv-IXg"/>
+                            <constraint firstItem="oXi-QN-m2M" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="Aos-6b-E17"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="6ZW-aH-HTc" secondAttribute="leading" id="PND-3Y-M9E"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oXi-QN-m2M" secondAttribute="trailing" id="PVj-vh-DIn"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="yNb-K5-WAP" secondAttribute="leading" id="QM3-1n-v0T"/>
+                            <constraint firstItem="6ZW-aH-HTc" firstAttribute="baseline" secondItem="oXi-QN-m2M" secondAttribute="baseline" id="TcP-bM-TiK"/>
+                            <constraint firstItem="oXi-QN-m2M" firstAttribute="height" secondItem="6ZW-aH-HTc" secondAttribute="height" id="UMn-78-jHO"/>
+                            <constraint firstItem="yNb-K5-WAP" firstAttribute="top" secondItem="oXi-QN-m2M" secondAttribute="bottom" constant="8" symbolic="YES" id="XWz-jJ-dJc"/>
+                            <constraint firstItem="6ZW-aH-HTc" firstAttribute="baseline" secondItem="oXi-QN-m2M" secondAttribute="baseline" id="qXv-Nh-nsT"/>
+                            <constraint firstItem="6ZW-aH-HTc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="tBO-40-cqv"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="5mz-1G-hFD"/>
+                                <exclude reference="TcP-bM-TiK"/>
+                                <exclude reference="qXv-Nh-nsT"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="inputMail" destination="oXi-QN-m2M" id="dEd-j5-ylx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+</document>
